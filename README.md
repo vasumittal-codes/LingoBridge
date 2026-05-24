@@ -1,18 +1,27 @@
-<<<<<<< HEAD
 # LingoBridge 🌍
 
-A Flask-based **Smart Language Translator** with support for 20+ languages, analytics dashboard, and translation history.
+LingoBridge ek Flask based language translator project hai jo multiple languages support karta hai. Is project ka main purpose ek simple translator banana hai jisme translation history aur basic analytics bhi mil jaye.
 
-## Features
+---
 
-✨ **Multi-Language Support** - English, Hindi, Spanish, French, German, Japanese, Chinese, Arabic, and more  
-📊 **Analytics Dashboard** - Track translation history and usage statistics  
-🗂️ **Database Storage** - Keep records of all translations  
-🎨 **Simple Web Interface** - Clean, easy-to-use UI
+Features
 
-## Installation
+- 20+ languages support (English, Hindi, French, Spanish, German, etc.)
+- Basic analytics dashboard jisme total translations aur history dikhti hai
+- SQLite database use hota hai translations save karne ke liye
+- Simple web interface hai use karne ke liye easy
+- Translation history dekh sakte ho
 
-**Requirements:** Python 3.8+
+---
+
+Requirements
+
+- Python 3.8 ya uske upar
+- pip installed hona chahiye
+
+---
+
+Installation
 
 ```bash
 git clone https://github.com/yourusername/LingoBridge.git
@@ -20,157 +29,83 @@ cd LingoBridge
 pip install -r requirements.txt
 ```
 
-## Usage
+---
+
+Run kaise kare
 
 ```bash
 python app.py
 ```
 
-Open your browser and go to `http://localhost:5000`
+Phir browser me open karo:
 
-## Project Structure
-
-```
-LingoBridge/
-├── app.py                 # Main Flask application
-├── init_db.py            # Database initialization
-├── requirements.txt      # Python dependencies
-├── templates/            # HTML files
-├── static/               # CSS & JavaScript
-└── instance/             # Database storage
-```
-
-## License
-
-MIT License - see LICENSE file for details
-Move into the project directory:
-
-```bash
-cd TransLingua
-```
-
-### Step 4: Create Virtual Environment (recommended)
-
-```bash
-python -m venv venv
-```
-
-Activate it:
-
-**Windows**
-```bash
-venv\Scripts\activate
-```
-
-**Mac/Linux**
-```bash
-source venv/bin/activate
-```
-
-### Step 5: Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Step 6: Database Setup
-A sample SQLite database is already included in the `instance` folder.
-
-If you want to recreate database manually:
-
-```bash
-python init_db.py
-```
-
-If you want sample records:
-
-```bash
-python sample_data.py
-```
-
-### Step 7: Run the Project
-
-```bash
-python app.py
-```
-
-### Step 8: Open in Browser
-Visit:
-
-```bash
 http://127.0.0.1:5000/
-```
-
-Dashboard page:
-
-```bash
-http://127.0.0.1:5000/dashboard
-```
 
 ---
 
-## 8. How Database Works
+Project structure
 
-The project uses SQLite database file:
+LingoBridge/
+- app.py -> main Flask file
+- init_db.py -> database create karta hai
+- sample_data.py -> sample data insert karta hai (optional)
+- requirements.txt -> required packages
+- templates/ -> HTML files
+- static/ -> CSS aur JavaScript
+- instance/ -> database file
 
-```bash
+---
+
+Database info
+
+Database file:
 instance/translingua.db
-```
 
-Table used:
-- `translations`
+Table name: translations
 
 Columns:
-- `id`
-- `source_text`
-- `translated_text`
-- `source_lang`
-- `target_lang`
-- `created_at`
+- id
+- source_text
+- translated_text
+- source_lang
+- target_lang
+- created_at
 
 ---
 
-## 9. Module Explanation
+Modules explanation
 
-### app.py
-Main Flask backend file. Handles routing, translation API, database work, and analytics.
+app.py -> main backend jahan routing aur translation logic hai
 
-### init_db.py
-Creates the database and table.
+init_db.py -> database create karta hai
 
-### sample_data.py
-Inserts sample translation rows.
+sample_data.py -> test data add karta hai
 
-### templates/index.html
-Main UI of the translator.
+templates folder -> UI pages (index aur dashboard)
 
-### templates/dashboard.html
-Simple analytics page.
-
-### static/css/style.css
-All styling for the project.
-
-### static/js/main.js
-Frontend logic for translation, speech, typing effect, theme toggle, etc.
-
-### static/js/dashboard.js
-Loads analytics data for dashboard.
+static folder -> styling aur JS files
 
 ---
 
-## 10. Notes
+Dashboard
 
-- Voice input works best in Chrome browser.
-- Translation uses online Google translation service through the Python library.
-- If internet is not available, translation may fail and show error message.
-- This is a student-level project, so some UI/layout parts are intentionally kept simple.
+Dashboard me basic stats milte hain jaise:
+- total translations
+- recent history
+
+URL:
+http://127.0.0.1:5000/dashboard
 
 ---
 
-## 11. Author Note
+Notes
 
-This project is prepared in a final year student project style. The code is written in a realistic and readable way so that it is easy to understand, explain in viva, and modify later.
-=======
-# LingoBridge
-AI-powered multi-language translator built using modern web technologies.
->>>>>>> eead1544779072d1fb6e3de8e75a015998fe25b1
+- Internet required hai kyunki translation API online hai
+- Chrome recommended hai voice input ke liye
+- Project simple rakha gaya hai taaki easily samajh aaye aur viva me explain ho sake
+
+---
+
+Author
+
+Ye project ek student ne banaya hai learning purpose ke liye. Code simple aur readable hai taaki easily modify aur explain ho sake.
