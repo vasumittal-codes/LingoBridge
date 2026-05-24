@@ -39,7 +39,6 @@ python app.py
 
 Phir browser me open karo:
 
-http://127.0.0.1:5000/
 
 ---
 
@@ -92,9 +91,6 @@ Dashboard
 Dashboard me basic stats milte hain jaise:
 - total translations
 - recent history
-
-URL:
-http://127.0.0.1:5000/dashboard
 
 ---
 
